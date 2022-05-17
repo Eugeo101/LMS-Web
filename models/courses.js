@@ -5,7 +5,7 @@ const courseSchema = new Schema({
     title: String,
     desc: String,
     CH: Number,
-    assignments: [{ desc: String, deadline: String }],
+    assignments: {type:[{ title:String, desc: String, deadline: String }], _id:false},
     material: [String],
 });
 
