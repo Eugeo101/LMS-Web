@@ -153,7 +153,7 @@ exports.assignCourse = async (req, res, next) => {
 };
 
 exports.deleteAss = async (req, res, next) => {
-    console.log('156');
+    //console.log('156');
     const {id, title} = req.params;
     const course = await Course.findById(id).exec();
     if (course) {
@@ -166,7 +166,7 @@ exports.deleteAss = async (req, res, next) => {
 };
 
 exports.deleteMaterial = async (req, res, next) => {
-    console.log('1696');
+    //console.log('1696');
     const {id, material} = req.params;
     const course = await Course.findById(id).exec();
     if (course) {
