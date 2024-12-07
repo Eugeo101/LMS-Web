@@ -48,5 +48,46 @@ Check out the deployed LMS on Heroku: [LMS Live](https://swlms.herokuapp.com/)
 
 1. **Clone the repository:**  
    ```bash
-   git clone https://github.com/yourusername/lms.git
+   git clone [https://github.com/Eugeo101/LMS-Web]
    cd lms
+   ```
+2. **Install dependencies:**
+   ```bash
+    npm install
+   ```
+3. **Set up MongoDB:**
+Install MongoDB locally or use a cloud service like MongoDB Atlas.
+Update the config.js file with your MongoDB connection URI.
+
+4. **Run the application:**
+   ```bash
+     npm start
+   ```
+5. **Access the application:**
+   Open your browser and navigate to [https://swlms.herokuapp.com/]
+---
+# 🚀 Deployment
+This application is deployed on Heroku for live usage. For deploying it yourself:
+
+1. **Ensure you have a Heroku account and the Heroku CLI installed.**
+2. **Log in to Heroku**
+   ```bash
+     heroku login
+   ```
+3. **Create a new Heroku app:**
+   ```bash
+     heroku create your-app-name
+   ```
+4. **Deploy the application:**
+   ```bash
+     git push heroku main
+   ```
+5. **Set up MongoDB URI in Heroku environment variables:**
+   ```bash
+     heroku config:set MONGO_URI=your-mongodb-uri
+   ```
+---
+# 📈 Future Enhancements
+Integration with third-party learning APIs to expand resource availability.
+Advanced analytics dashboard for course performance tracking.
+Gamification elements to increase engagement, such as badges and leaderboards.
